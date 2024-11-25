@@ -1,0 +1,49 @@
+body {
+  background-color: #faf9f6;
+}
+
+*::selection{
+  background-color: #f00001;
+  color: #faf9f6;
+}
+
+.card {
+  box-shadow: 1px 4px 4px rgb(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  transition: all 0.3s;
+  cursor: pointer;
+  box-shadow: 1px 4px 4px rgb(0, 0, 0, 0.2);
+}
+
+.btn {
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  transition: all 0.3s;
+  cursor: pointer;
+  box-shadow: 1px 4px 4px rgb(0, 0, 0, 0.1);
+}
+
+.mobile,
+.desktop {
+  height: 90vh;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+}
